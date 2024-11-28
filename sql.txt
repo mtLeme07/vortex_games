@@ -1,0 +1,17 @@
+CREATE DATABASE Vortex;
+
+USE vortex;
+
+CREATE TABLE jogos (
+	id INT(3) NOT NULL AUTO_INCREMENT,
+	Nome VARCHAR(50) NOT NULL,
+	Preco DECIMAL(5,2) NOT NULL,
+	Imagem VARCHAR (20),
+	PRIMARY KEY (id)
+);
+
+INSERT INTO jogos (nome, preco, imagem) VALUES ("Dead by Daylight", 59.97, "dbd.jpeg");
+INSERT INTO jogos (nome, preco, imagem) VALUES ("Rimworld", 79.99, "rimworld.jpg");
+INSERT INTO jogos (nome, preco, imagem) VALUES ("Garry's Mod", 25.99, "gmod.png");
+INSERT INTO jogos (nome, preco, imagem) VALUES ("Left 4 Dead 2", 32.99, "l4d2.jpg");
+INSERT INTO jogos (nome, preco, imagem) VALUES ("Payday 2", 32.99, "pd2.jpg");
